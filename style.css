@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #4b4be9, purple);
+    background-size: cover;
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+#main-div {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#form {
+    height: auto;
+    width: auto;
+    min-width: 50%;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.568);
+    color: #fff;
+    margin: 6px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 3px 0 5px 0;
+}
+
+.header>h1 {
+    padding-top: 20px;
+    color: rgba(152, 205, 50, 1);
+}
+
+#inputform>input {
+    font-size: 16px;
+    padding: 5px 5px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    width: 250px;
+    border: none;
+    border-bottom: 1.5px solid yellowgreen;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+}
+
+.inputform {
+    text-align: center;
+}
+
+#inputform>textarea {
+    font-size: 16px;
+    padding: 5px 5px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    width: 250px;
+    border: none;
+    border-bottom: 1.5px solid yellowgreen;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+
+#inputform>textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.buttons {
+    padding: 30px 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 6px;
+    border: 1px solid yellowgreen;
+    color: white;
+    border-radius: 5px;
+    width: 95px
+}
+
+.btn:hover {
+    background-color: yellowgreen;
+    color: black;
+}
+
+
+/* Your Notes part */
+
+.container-cl {
+    margin: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.568);
+    height: auto;
+    min-height: 400px;
+    width: auto;
+}
+
+.container-cl>h3 {
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.container-cl #notes {
+    list-style: none;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+ul>li {
+    min-height: 250px;
+    height: auto;
+    min-width: 200px;
+}
+
+ul>li:nth-child(odd) {
+    background-color: yellowgreen;
+    width: 150px;
+    border-radius: 10px;
+    transform: rotate(-4deg);
+    position: relative;
+    padding: 5px;
+}
+
+ul>li:nth-child(even) {
+    background-color: yellowgreen;
+    width: 150px;
+    border-radius: 10px;
+    transform: rotate(4deg);
+    position: relative;
+    padding: 5px;
+}
+
+ul li div {
+    padding-top: 20px;
+    border-bottom: 1px dashed black;
+}
+
+ul li div h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 1;
+    text-transform: uppercase;
+}
+
+ul li p {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 20px;
+    font-style: none;
+    color: black;
+}
+
+.delete {
+    float: right;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    right: 0;
+    background-color: red;
+    border: 1px solid white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 1px;
+    text-align: center;
+    justify-content: center;
+}
+
+.delete:hover {
+    background-color: yellowgreen;
+}
